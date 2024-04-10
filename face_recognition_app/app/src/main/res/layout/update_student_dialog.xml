@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/inputFullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_rounded_bg"
+        android:layout_marginTop="12dp"
+        android:hint="Full Name" />
+
+    <EditText
+        android:id="@+id/inputEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_rounded_bg"
+        android:layout_below="@id/inputFullName"
+        android:layout_marginTop="12dp"
+        android:inputType="textEmailAddress"
+        android:hint="Email" />
+
+    <EditText
+        android:id="@+id/inputPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_rounded_bg"
+        android:layout_below="@id/inputEmail"
+        android:layout_marginTop="12dp"
+        android:hint="Phone Number" />
+
+    <EditText
+        android:id="@+id/inputAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_rounded_bg"
+        android:layout_below="@id/inputPhoneNumber"
+        android:layout_marginTop="12dp"
+        android:hint="Address" />
+
+    <Spinner
+        android:id="@+id/inputYearSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/inputAddress"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/spinner_background"
+        android:popupBackground="@color/greenmist"
+        android:entries="@array/years_options"
+        android:spinnerMode="dropdown"
+        android:dropDownWidth="match_parent"
+        android:dropDownVerticalOffset="48dp"
+        android:dropDownHorizontalOffset="10dp" />
+
+    <Spinner
+        android:id="@+id/inputDivisionSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/inputYearSpinner"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/spinner_background"
+        android:popupBackground="@color/greenmist"
+        android:entries="@array/division_options"
+        android:spinnerMode="dropdown"
+        android:dropDownWidth="match_parent"
+        android:dropDownVerticalOffset="48dp"
+        android:dropDownHorizontalOffset="10dp" />
+
+    <Spinner
+        android:id="@+id/inputGenderSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/inputDivisionSpinner"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/spinner_background"
+        android:popupBackground="@color/greenmist"
+        android:entries="@array/genders"
+        android:spinnerMode="dropdown"
+        android:dropDownWidth="match_parent"
+        android:dropDownVerticalOffset="48dp"
+        android:dropDownHorizontalOffset="10dp" />
+
+    <EditText
+        android:id="@+id/inputAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_rounded_bg"
+        android:layout_below="@id/inputGenderSpinner"
+        android:layout_marginTop="12dp"
+        android:hint="Age" />
+
+    <EditText
+        android:id="@+id/inputDateOfBirth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_rounded_bg"
+        android:layout_below="@id/inputAge"
+        android:layout_marginTop="12dp"
+        android:hint="Date of Birth (YYYY-MM-DD)"
+        android:focusable="false"
+        android:onClick="showDatePickerDialog" />
+
+
+</RelativeLayout>

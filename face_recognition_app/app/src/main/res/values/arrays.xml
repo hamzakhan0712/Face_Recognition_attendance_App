@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="years_options">
+        <item>First Year</item>
+        <item>Second Year</item>
+        <item>Third Year</item>
+        <item>Fourth Year</item>>
+        <!-- Other year options -->
+    </string-array>
+
+    <string-array name="division_options">
+        <item>Computer Science</item>
+        <item>AI-ML</item>
+        <item>Data Science</item>
+        <item>Artificial Intelligence</item>
+        <item>Information Technology</item>
+        <!-- Other division options -->
+    </string-array>
+
+    <string-array name="genders">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+
+
+</resources>

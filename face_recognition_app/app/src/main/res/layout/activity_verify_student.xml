@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <EditText
+                android:id="@+id/editTextFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_rounded_bg"
+                android:hint="Full Name"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/emailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_rounded_bg"
+                android:layout_marginTop="12dp"
+                android:layout_below="@id/editTextFullName"
+                android:inputType="textEmailAddress"
+                android:hint="Email" />
+
+
+            <!-- Phone Number Input Field -->
+            <EditText
+                android:id="@+id/editTextPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_rounded_bg"
+                android:layout_below="@id/emailEditText"
+                android:layout_marginTop="12dp"
+                android:hint="Phone Number"
+                android:inputType="phone" />
+
+            <!-- Year Spinner -->
+            <Spinner
+                android:id="@+id/yearSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextPhoneNumber"
+                android:background="@drawable/spinner_background"
+                android:popupBackground="@color/greenmist"
+                android:padding="8dp"
+                android:entries="@array/years_options"
+                android:spinnerMode="dropdown"
+                android:dropDownWidth="match_parent"
+                android:layout_marginTop="12dp"
+                android:dropDownVerticalOffset="48dp"
+                android:dropDownHorizontalOffset="10dp" />
+
+            <!-- Division Spinner -->
+            <Spinner
+                android:id="@+id/divisionSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/yearSpinner"
+                android:background="@drawable/spinner_background"
+                android:popupBackground="@color/greenmist"
+                android:entries="@array/division_options"
+                android:layout_marginTop="12dp"
+                android:padding="8dp"
+                android:spinnerMode="dropdown"
+                android:dropDownWidth="match_parent"
+                android:dropDownVerticalOffset="48dp"
+                android:dropDownHorizontalOffset="10dp" />
+
+            <Button
+                android:id="@+id/verifyButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Verify"
+                android:textColor="@color/darkgreen"
+                android:textSize="18sp"
+                android:padding="16dp"
+                android:layout_marginTop="45dp"
+                android:layout_alignParentBottom="true" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

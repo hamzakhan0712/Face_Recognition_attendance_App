@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Your other styles here -->
+
+    <style name="SpinnerPopupTheme" parent="ThemeOverlay.MaterialComponents.Light">
+        <item name="android:background">@color/white</item>
+        <item name="android:textColor">@color/black</item>
+        <!-- Customize other attributes as needed -->
+    </style>
+    <style name="ButtonStyle.Face_recognition_app" parent="Widget.MaterialComponents.Button">
+        <item name="android:background">@drawable/button_rounded_bg</item>
+        <item name="android:textColor">@color/orange</item>
+        <!-- Add other button attributes here -->
+    </style>
+
+
+</resources>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/headingTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student Information : "
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/fullNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_rounded_bg"
+            android:layout_marginTop="12dp"
+            android:hint="Full Name" />
+
+        <EditText
+            android:id="@+id/studentEmailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_rounded_bg"
+            android:layout_marginTop="12dp"
+            android:inputType="textEmailAddress"
+            android:hint="Email" />
+
+
+        <EditText
+            android:id="@+id/phoneNumberEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_rounded_bg"
+            android:layout_marginTop="12dp"
+            android:hint="Phone Number" />
+
+        <EditText
+            android:id="@+id/addressEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_rounded_bg"
+            android:layout_marginTop="12dp"
+            android:hint="Address" />
+
+        <Spinner
+            android:id="@+id/yearSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/spinner_background"
+            android:popupBackground="@color/greenmist"
+            android:entries="@array/years_options"
+            android:spinnerMode="dropdown"
+            android:dropDownWidth="match_parent"
+            android:dropDownVerticalOffset="48dp"
+            android:dropDownHorizontalOffset="10dp"/>
+
+        <Spinner
+            android:id="@+id/divisionSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/spinner_background"
+            android:popupBackground="@color/greenmist"
+            android:entries="@array/division_options"
+            android:spinnerMode="dropdown"
+            android:dropDownWidth="match_parent"
+            android:dropDownVerticalOffset="48dp"
+            android:dropDownHorizontalOffset="10dp"/>
+
+        <Spinner
+            android:id="@+id/genderSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/spinner_background"
+            android:popupBackground="@color/greenmist"
+            android:entries="@array/genders"
+            android:spinnerMode="dropdown"
+            android:dropDownWidth="match_parent"
+            android:dropDownVerticalOffset="48dp"
+            android:dropDownHorizontalOffset="10dp"/>
+
+        <EditText
+            android:id="@+id/ageEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_rounded_bg"
+            android:layout_marginTop="12dp"
+            android:hint="Age" />
+
+        <EditText
+            android:id="@+id/dateOfBirthEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_rounded_bg"
+            android:layout_marginTop="12dp"
+            android:hint="Date of Birth (YYYY-MM-DD)"
+            android:focusable="false"
+            android:onClick="showDatePickerDialog" />
+
+
+
+        <!-- Button to capture photo -->
+        <Button
+            android:id="@+id/capturePhotoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/darkgreen"
+            android:text="Capture Photo" />
+
+        <!-- ImageView to display captured photo -->
+        <ImageView
+            android:id="@+id/capturedImageView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/addStudentButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/darkgreen"
+            android:text="Add Student"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+
+
+</ScrollView>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AttendanceApp</string>
+    <string name="first_spinner_hint">Select an option</string>
+
+</resources>
